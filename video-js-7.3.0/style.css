@@ -1,0 +1,37 @@
+.grid {
+    display : grid;
+    gap : 10px;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+    grid-template-rows: 100px 60px 100px 100px;
+    grid-template-areas: 
+    "header header header login"
+    "menu menu menu menu"
+    "content content content nav"
+    "content content content nav"
+    "footer footer footer footer";
+}
+.header {
+    
+  grid-area : header !important;
+}
+
+.menu {
+    grid-area : menu !important;
+}
+
+.login {
+    grid-area : login !important;
+}
+
+
+.content {
+    grid-area : content !important;
+}
+.nav {
+    
+    grid-area : nav !important;
+}
+.footer{
+  
+    grid-area : footer !important;
+}
