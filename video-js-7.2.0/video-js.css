@@ -1277,3 +1277,8 @@ video::-webkit-media-text-track-display {
   height: 100%;
   border: none;
   visibility: hidden; }
+
+  .video-js{
+    width: 1850px;
+    height: 925px;
+  }
