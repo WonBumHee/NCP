@@ -1,0 +1,29 @@
+{
+  "name": "ncp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "mysql": "^2.18.1",
+    "require": "^2.4.20",
+    "require.js": "^1.0.0",
+    "video.js": "^7.8.4",
+    "vuex": "^3.5.1",
+    "yarn": "^1.22.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WonBumHee/NCP.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WonBumHee/NCP/issues"
+  },
+  "homepage": "https://github.com/WonBumHee/NCP#readme"
+}

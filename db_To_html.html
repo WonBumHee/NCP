@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=euc-kr"/>
+    
+	<link href="./video-js-7.3.0/video-js.css" rel="stylesheet">
+	<script src="./video-js-7.3.0/video.min.js"></script>
+
+</head>
+
+
+<body>  
+	<p>${{this.rows}}</p>
+<!--여기에 디비 안에 있는 숫자만큼 제목들을 보여 줘야함. for문으로 하면 되겠지?-->
+<!--버튼을 만들어서 해당 버튼을 누르면 영상이 재생 될 수 있게 해야함..-->
+<div id="wrap" class="monitoring">  
+
+	<div class="container">
+
+		<div class="content">
+            
+			<div class="col-sm-8">
+				<video
+					id="my-player" 
+					class="video-js vjs-big-play-button vjs-big-play-centered"
+					controls
+					preload="auto"
+					data-setup='{}'>
+					 <!-- <source src="https://pehukxepmafb4747641.cdn.ntruss.com/hls/live-station/record/ls-20200716162545-0cxSo/872-2794-202007221609.mp4/index.m3u8" type="application/x-mpegURL"></source> -->
+					 <source src="https://aawaeevcqsrx4941078.cdn.ntruss.com/hls/806-2449-202007021809.mp4/index.m3u8" type="application/x-mpegURL"></source>
+					
+                    </video>
+			</div>
+		</div>
+	</div>
+		<br>
+	</div>
+</div>
+
+<script>    //일단 여기를 통해 디비에 있는 내용 받아옴. rows[i].url임.
+    const mysql      = require('mysql');
+    const connection = mysql.createConnection({
+    host     : 'db-4ndkp.pub-cdb.ntruss.com',
+    user     : 'bumi',
+    password : 'qjagml1994!',
+    database : 'test'
+    });
+
+    connection.connect();
+
+    connection.query('SELECT * from entries', (error, rows) => {
+    if (error) throw error;
+    console.log('User info is: ', rows);
+   
+    });
+
+    connection.end();
+
+</script>
+
+
+
+</body>
+</html>

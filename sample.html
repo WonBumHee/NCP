@@ -1,7 +1,37 @@
-<html>
-    <head>VOD</head>
-    <body>
-        <video src="https://pehukxepmafb4747641.cdn.ntruss.com/hls/live-station/record/ls-20200716162545-0cxSo/872-2794-202007221609.mp4/index.m3u8" controls autoplay></video>
-    </body>
-</html>
+<!DOCTYPE html>
 
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    
+	<link href="./video-js-7.3.0/video-js.css" rel="stylesheet">
+	<script src="./video-js-7.3.0/video.min.js"></script>
+
+
+</head>
+<body>
+    <div id="wrap" class="monitoring">
+
+        <div class="container">
+
+            <div class="content">
+                
+                <div class="col-sm-8">
+                    <video
+                        id="my-player" 
+                        class="video-js vjs-big-play-button vjs-big-play-centered"
+                        controls
+                        preload="auto"
+                        data-setup='{}'>
+                        <!-- <source src="https://pehukxepmafb4747641.cdn.ntruss.com/hls/live-station/record/ls-20200716162545-0cxSo/872-2794-202007221609.mp4/index.m3u8" type="application/x-mpegURL"></source> -->
+                        <source src="https://aawaeevcqsrx4941078.cdn.ntruss.com/hls/806-2449-202007021809.mp4/index.m3u8" type="application/x-mpegURL"></source>
+                    </video>
+                </div>
+            </div>
+        </div>
+        <script>
+            
+        </script>
+    </div>
+</body>
+</html>
