@@ -1278,7 +1278,7 @@ video::-webkit-media-text-track-display {
   border: none;
   visibility: hidden; }
 
-  .video-js{
+  .my-player-dimensions{
     width: 1850px !important;
     height: 925px !important;
   }
