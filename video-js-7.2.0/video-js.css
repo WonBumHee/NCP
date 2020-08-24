@@ -1279,6 +1279,6 @@ video::-webkit-media-text-track-display {
   visibility: hidden; }
 
   .video-js{
-    width: 1850px;
-    height: 925px;
+    width: 1850px !important;
+    height: 925px !important;
   }
